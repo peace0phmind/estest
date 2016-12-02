@@ -1,0 +1,18 @@
+spring:
+  data:
+    elasticsearch:
+      cluster-nodes: 192.168.100.143:9300
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.100.82:3306/saledb?relaxAutoCommit=true&zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+    username: saledb
+    password: saledb
+
+    initial-size: 2
+    max-active: 5
+    max-idle: 2
+  application:
+    name: estest
+
+
